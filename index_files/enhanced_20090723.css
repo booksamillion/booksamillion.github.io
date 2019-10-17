@@ -1,0 +1,121 @@
+/*-------------------------------------------    
+    module.inc
+-------------------------------------------*/
+.module .product-list { overflow:hidden; }
+
+.small { margin:0 0 20px 0; padding:0; width:100%; height:100%; }
+.small h4 { margin:0 0 3px 0; }
+.small .product-wrap { display:none; overflow:hidden; }
+	.small .product-list { margin:10px 10px 10px; }
+
+.small .selected { display:block; }
+
+/*-------------------------------------------    
+    .tabset
+-------------------------------------------*/
+/*.details .tab-container { background:#d1ccbf url(/images/layout/details-inside-top.gif) no-repeat left top; float:left; margin-left:-230px; padding-left:230px; width:100%; }*/
+	* html .tab-container { /*margin:0; padding:0;*/ /*padding:0 0 0 230px; position:relative; left:-230px; margin-right:-230px;*/ }
+
+/*-------------------------------------------
+    PRODUCT DETAILS
+-------------------------------------------*/
+.details .tabset { background-image:url(/images/layout/details-inside-top.gif); }
+
+.details .tabset .tab { margin:0 2px 0 0; padding:0; }
+	* html .details .tabset .tab { width:auto; }
+
+.details .tabset .tab-content { padding-top:2em; }
+
+/*-------------------------------------------
+    CART/WISH LIST
+-------------------------------------------*/
+#cart, #cart-loading { clear:left; overflow:hidden; /*margin-top:-20px;*/  }
+	#cart { z-index:101; }
+	#cart-loading { visibility:hidden; z-index:100; }
+	
+#cart-summary #spinner, #wishlist-summary #spinner { position:absolute; top:4px; right:5px; z-index:100; }
+#cart-summary #spinner { right:235px; }
+
+.cart-contents .quantity .update { display:none; }
+
+/*-------------------------------------------
+    SEARCH RESULTS
+-------------------------------------------*/
+#refine { display:none; position:relative; height:1%; }
+.refine-toggle { color:#AAC3DA; float:left; font-size:10px; width:300px; margin:10px 10px 15px; }
+.refine-toggle-open { display:none; }
+.refine-close { position:absolute; right:10px; top:5px; z-index:100; width:18px; height:18px; text-indent:-9999px; background:transparent url(/images/widgets/refine-close.gif) no-repeat center center; }
+
+/*-------------------------------------------
+    LIVE SEARCH
+-------------------------------------------*/
+#quick-search { position:relative; z-index: 300; }
+#search-results-wrapper { position:absolute; width:294px; font-size:1.1em; top:27px; left:4px; z-index:30; }
+	* html #search-results-wrapper { top:24px; }
+	* + html #search-results-wrapper { top:24px; }
+#search-results-wrapper h3 { background:transparent url(/images/layout/live-search-header.png) repeat-y left top; clear:left; color:#494949; font-weight:bold; font-size:1.1em; padding:5px 22px; }
+	#search-results-wrapper h3 a { display:block; }
+#search-results-wrapper ul { background:transparent url(/images/layout/live-search.png) repeat-y left top; display:block; }
+	* + html #search-results-wrapper ul { margin-bottom:-2px; }
+#search-results-wrapper li { clear:left; list-style:none; margin:0; }
+	* + html #search-results-wrapper li { height:1%; }
+	#search-results-wrapper li a { color:#494949; display:block; font-weight:bold; margin:0 12px; padding:5px 10px; text-decoration:none; }
+		* + html #search-results-wrapper li a { height:1%; }
+		#search-results-wrapper li a:hover { background-color:#4e81a8; color:#fff !important; }
+		#search-results-wrapper li a:hover * { color:#fff; }
+	#search-results-wrapper li em { display:block; font-weight:normal; }
+	#search-results-wrapper li img { float:left; margin:0 1em 0 0; }
+
+#search-results-wrapper .footer { background:transparent url(/images/layout/live-search-bottom.png) no-repeat left bottom; padding:0 0 20px 0; }
+#search-results-wrapper .footer a { background:transparent url(/images/layout/live-search-footer.png) repeat-y left bottom; color:#fff; padding:5px 22px 0; }
+
+#search-results-loading { visibility:hidden; }
+
+#search-results-loading,
+#search-results { position:absolute; top:0; left:0; width:294px; overflow:hidden; }
+	
+	#search-results-loading { z-index:302; }
+	#search-results { z-index:301; }
+
+* html #search-results-wrapper h3 { background:none !important; }
+* html #search-results-wrapper ul { background:none !important; }
+* html #search-results-wrapper .footer { background:none !important; }
+* html #search-results-wrapper .footer a { background:none !important; }
+
+* html #search-results-wrapper .h3-bg { position:absolute; top:0; left:-22px; z-index:-1; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/layout/live-search-header.png', sizingMethod='scale'); }
+* html #search-results-wrapper .ul-bg { position:absolute; top:2px; left:-12px; z-index:-1; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/layout/live-search.png', sizingMethod='scale'); }
+* html #search-results-wrapper .footer .h3-bg { position:static; margin-top:2px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/layout/live-search-bottom.png'); }
+* html #search-results-wrapper .footera-bg { position:absolute; top:0; left:-22px; height:20px; z-index:-1; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/layout/live-search-footer.png', sizingMethod='scale'); }
+
+* + html #search-results-wrapper .h3-bg { display:none; }
+* + html #search-results-wrapper .ul-bg { display:none; }
+* + html #search-results-wrapper .footera-bg { display:none; }
+
+/*-------------------------------------------
+    CLIPPING
+-------------------------------------------*/
+#clipping-wrap { width:390px; visibility:hidden; z-index:200; }
+	#clipping-arrow { position:absolute; width:23px; height:18px; }
+	.wrap-up #clipping-arrow { background:transparent url(/images/layout/clipping-arrow-up.png) no-repeat left top; top:-13px; }
+	.wrap-down #clipping-arrow { background:transparent url(/images/layout/clipping-arrow-down.png) no-repeat left bottom; bottom:-13px; }
+#clipping-top { background:transparent url(/images/layout/clipping-top.png) no-repeat left top; height:21px; }
+#clipping-bottom { background:transparent url(/images/layout/clipping-bottom.png) no-repeat left bottom; height:21px; }
+#clipping { background:transparent url(/images/layout/clipping.png) repeat-y left top; padding:10px 30px; }
+
+#clipping { color:#555; }
+#clipping h6 { font-weight:bold; font-size:1.4em; }
+#clipping strong { display:block; margin:1em 0; }
+	#clipping p strong { display:inline; margin:0; }
+#clipping img { float:left; margin:0 10px 10px 0; }
+
+/*-------------------------------------------    
+    Fixes
+-------------------------------------------*/
+/* 1. Focus Rectangle Fix */
+	/*\*/ .arrow-left, .arrow-right, .page-number, .refine-close { overflow: hidden; } /**/
+
+/* 2. Clearfix */
+	/* Hides from IE-mac \*/
+	.small:after,         #search-results-wrapper li a:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	* html .small, * html #search-results-wrapper li a       { height: 1%; }
+	/* End hide from IE-mac */

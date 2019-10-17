@@ -1,0 +1,686 @@
+header {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+}
+header .group:before,
+header .group:after {
+  content: "";
+  display: table;
+}
+header .group:after {
+  clear: both;
+}
+header .group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+header a {
+  color: #000000;
+  text-decoration: none;
+}
+
+header > nav > ul > li > a:first-child {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+ 
+}
+
+header > .nonSecNav > ul > li > a:first-child {
+	padding: 10px 8px !important;
+}
+
+header > .secNav > ul > li > a:first-child {
+	padding: 10px 5px !important;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+header form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbbdc0;
+}
+header form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbbdc0;
+  opacity: 1;
+}
+header form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbbdc0;
+  opacity: 1;
+}
+header form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbbdc0;
+}
+header form .placeholder {
+  color: #bbbdc0;
+}
+header form textarea,
+header form input {
+  outline: none;
+}
+header form input[type=submit] {
+  font-family: 'Montserrat', sans-serif;
+  background: #002855;
+  border: none;
+  color: #FFF;
+  font-size: 11px;
+  padding: 9px 25px;
+}
+header form input[type=submit]:hover {
+  background: #6d6e70;
+}
+header .row {
+  width: 950px;
+  margin: 0 auto;
+}
+header .row.table {
+  display: table;
+  margin: 40px auto 20px;
+}
+header .row.table > div {
+  display: table-row;
+}
+header .row.table .col {
+  display: table-cell;
+  vertical-align: bottom;
+}
+header .row.table .col:first-child {
+  width: 164px;
+}
+header .row.table .col:first-child img {
+  display: block;
+}
+header .row.table .col:nth-child(2) {
+  position: relative;
+}
+header .row.table .col:nth-child(2) img {
+  position: absolute;
+  z-index: 1;
+}
+header .row.table .col:last-child {
+  text-align: right;
+}
+header ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+header li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+header .pull-left {
+  float: left;
+}
+header .pull-right {
+  float: right;
+}
+header .promo-club {
+  padding-left: 75px;
+  height: 30px;
+  background: url(https://secure.booksamillion.com/images/more/icon-club.png);
+  background-repeat: no-repeat;
+}
+header .promo-club a { margin: 7px 0 0 0; } 
+header .utility-account {
+  width: 100%;
+  height: 30px;
+  line-height: 30px; /* Morgan Branding Addition */
+  background: #002855;
+  font-size: 11px;
+  line-height: 30px;
+  color: #fff;
+}
+header .utility-account a {
+  color: #fff;
+  height: 23px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  padding: 0 6px;
+}
+
+/* Morgan Branding Addition */
+header .utility-account a:hover {
+color: #fff !important;
+}
+
+header .utility-account ul {
+  margin: 7px 0 0 0;
+}
+header .utility-account ul li {
+  font-size: 11px;
+  /* line-height: 30px;  Morgan Branding Addition */
+}
+header .utility-account ul li:before {
+  content: '|';
+}
+header .utility-account ul li:first-child:before {
+  content: none;
+  padding: 0;
+}
+header .utility-account ul li.signin {
+  position: relative;
+}
+header .utility-account ul li.signin ul {
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999999;
+  right: 0px;
+  display: none;
+}
+header .utility-account ul li.signin ul li:before {
+  content: none;
+}
+header .utility-account ul li.signin ul form {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #b2b2b2;
+  border-top: none;
+  background: white;
+  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+header .utility-account ul li.signin ul form input[type=text],
+header .utility-account ul li.signin ul form input[type=password],
+header .utility-account ul li.signin ul form input[type=email] {
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #6D6E70;
+  border: 1px solid #d1d2d4;
+}
+header .utility-account ul li.signin:hover > a {
+  /* background-color: #1883b6; */
+    text-decoration: underline;
+}
+header .utility-account ul li.signin:hover > a:hover {
+    text-decoration: underline;
+}
+header .utility-account ul li.signin:hover ul {
+  display: block;
+}
+header .utility-account ul li.account {
+  position: relative;
+}
+header .utility-account ul li.account > a {
+  padding-right: 19px;
+  background-image: url("//images.booksamillion.com/images/more/caret-account.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+header .utility-account ul li.account > a:hover {
+  text-decoration: none;
+}
+header .utility-account ul li.account ul {
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999999;
+  right: 0px;
+  display: none;
+}
+header .utility-account ul li.account ul li:before {
+  content: none;
+}
+header .utility-account ul li.account ul div {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header .utility-account ul li.account ul div ul {
+  background: #FFF;
+  padding: 20px;
+  border: 1px solid #b2b2b2;
+  border-top: none;
+  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+header .utility-account ul li.account ul div ul li {
+  display: block;
+  padding: 5px 0;
+  line-height: 12px;
+}
+header .utility-account ul li.account ul div ul li a {
+  height: auto;
+  padding: 0px;
+  white-space: nowrap;
+  color: #6d6e70;
+}
+header .utility-account ul li.account:hover > a {
+  background-color: #1883b6;
+}
+header .utility-account ul li.account:hover ul {
+  display: block;
+}
+header .table form {
+  height: 40px;
+  width: 495px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  border: 1px solid #bcbec0;
+  margin-left: 10px;
+  float:left;
+}
+header .table form input[type=text] {
+  height: 38px;
+  /*width: 270px; /* 375 */
+  border: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  padding: 10px;
+  background: #FFF;
+  color: #6D6E70;
+  font-size: 14px;
+}
+#query {
+	/* was 270; shaved two pix or where-drop falls down a line when cart icon
+ 		to the right has wide two-digit count, eg "Cart 20" */
+	width: 300px;
+}
+header .icon-position { padding-right: 17px;}
+header .table form .styled-select {
+background: transparent;
+  margin: 9px 0;
+  width: 180px;
+  height: 22px;
+  line-height: 22px; /* Morgan Branding Addition */
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  border-left: 1px solid #bcbec0;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance: none;
+  overflow:hidden;
+}
+
+header .table form .styled-select select {
+  border: none;
+  color: #6D6E70;
+  font-size: 12px;
+  width: 170px;
+  background-image: none;
+  background: url("//images.booksamillion.com/images/more/caret-products.png") no-repeat;
+  background-position: 155px 50%;
+  box-shadow: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+header .table form .styled-select select option {
+  color: #6D6E70;
+}
+header .table form .styled-select select::-ms-expand {
+  display: none;
+}
+header .table form .styled-select select:hover {
+  cursor: pointer;
+}
+header .table form .styled-select select:focus {
+  outline: none;
+}
+header .utility-shop li {
+  height: 40px;
+  font-size: 11px;
+  text-align: center;
+  padding-right: 20px;
+}
+header .utility-shop li a {
+  /*height: 40px;*/
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+/*
+header .utility-shop li:nth-child(1) a {
+ background: url(https://secure.booksamillion.com/images/more/icon-cart.png); 
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: block;
+}
+header .utility-shop li:nth-child(2) a {
+  background: url(https://secure.booksamillion.com/images/more/icon-heart.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: block;
+}
+header .utility-shop li:nth-child(3) a {
+  background: url(https://secure.booksamillion.com/images/more/icon-map.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: block;
+}
+*/
+
+.pin-solid.icon {
+	color: #000;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 2px;
+    width: 17px;
+    height: 17px;
+    border: solid 1px currentColor;
+    border-radius: 11px 11px 11px 0;
+    background-color: currentColor;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.pin-solid.icon:before {
+	content: '';
+	position: absolute;
+	left: 4px;
+	top: 5px;
+	width: 6px;
+	height: 6px;
+	color: white;
+	border: solid 1px currentColor;
+	border-radius: 3px;
+	background-color: currentColor;
+}
+
+.icono-heart {
+	width: 15px;
+    height: 15px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 4px 0;
+    margin: 9px 8px 5px 23px;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+.icono-heart:after,.icono-heart:before {
+	position:absolute;
+	content: '';
+	pointer-events: none;
+	border: 2px solid;   
+}
+.icono-heart:before {
+	width: 8px;
+    height: 10px;
+    left: -10px;
+    bottom: -2px;
+    border-radius: 10px 0 0 10px;
+    border-right-color: transparent;
+}
+.icono-heart:after {
+	width: 10px;
+    height: 8px;
+    right: -2px;
+    top: -10px;
+    border-radius: 10px 10px 0 0;
+    border-bottom-color: transparent;
+}
+
+
+
+header .utility-shop li:last-child {
+  padding-right: 0px;
+}
+header nav {
+  text-transform: uppercase;
+  color: #002855;
+  border-top: 1px solid #d1d3d4;
+  border-bottom: 3px solid #bcbec0;
+}
+header nav a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  padding: 10px 14px;
+}
+
+.sec_nav a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  padding: 10px 11.2px;
+}
+
+header nav a:hover {
+  color: #939597;
+  background: #e6e7e8;
+  text-decoration: none;
+}
+header nav > ul > li > a:hover {
+text-decoration: underline;
+}
+header nav > ul {
+  text-align: center;
+  font-size: .94em;
+}
+
+.row > ul > li {
+	font-size: .94em;
+	margin-bottom:0;
+}
+
+header nav > ul > li {
+  position: relative;
+  font-size: 12px;
+}
+header nav > ul > li > ul {
+  margin-top: 0px;
+  position: absolute;
+  z-index: 9999999;
+  display: none;
+}
+header nav > ul > li > ul .container {
+  color: #6d6e70;
+  background: #FFF;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  width: 672px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  padding: 20px;
+  border: 1px solid #b2b2b2;
+  border-top: 3px solid #b2b2b2;
+  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+header nav > ul > li > ul .container .col {
+  float: left;
+  text-align: left;
+  width: 130px;
+  margin-right: 30px;
+}
+header nav > ul > li > ul .container .col h3 {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  margin: 0px;
+}
+header nav > ul > li > ul .container .col p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header nav > ul > li > ul .container .col img {
+  padding-top: 20px;
+  max-width: 130px; /* Morgan Branding Addition */
+}
+header nav > ul > li > ul .container .col a {
+  padding: 0px;
+}
+header nav > ul > li > ul .container .col a:hover {
+  background: none;
+  text-decoration: underline;
+}
+header nav > ul > li > ul .container .col ul {
+  list-style: none;
+}
+header nav > ul > li > ul .container .col ul li {
+  display: block;
+  padding-bottom: 7px;
+}
+header nav > ul > li > ul .container .col ul li a {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header nav > ul > li > ul .container .col ul li:nth-child(n+2) h3 {
+  margin-top: 20px;
+}
+header nav > ul > li > ul .container .col:last-child {
+  margin-right: 0px;
+}
+header nav > ul > li > ul#sub-teen {
+  margin-left: -40px;
+}
+header nav > ul > li > ul#sub-ebooks {
+  margin-left: -100px;
+}
+header nav > ul > li > ul#sub-tech {
+  margin-left: -160px;
+}
+header nav > ul > li > ul#sub-movies {
+  margin-left: -240px;
+}
+header nav > ul > li > ul#sub-magazines {
+  margin-left: -340px;
+}
+header nav > ul > li > ul#sub-bargains {
+  margin-left: -440px;
+}
+header nav > ul > li > ul#sub-textbooks {
+  margin-left: -530px;
+}
+header nav > ul > li > ul#sub-more {
+  right: 0px;
+}
+header nav > ul > li:after {
+  content: '|';
+  line-height: 35px;
+}
+header nav > ul > li:last-child:after {
+  content: none;
+  padding: 0;
+}
+header nav > ul > li:hover > a {
+  color: #939597;
+  background: #e6e7e8;
+}
+header nav > ul > li:hover ul {
+  display: block;
+}
+/*
+////////////////////
+IE9 SPECIFIC STYLES
+////////////////////
+*/
+.ie9 header form input[type=text] {
+  width: 365px;
+}
+.ie9 header form .styled-select {
+  background: none;
+}
+/*
+////////////////////
+IE8 SPECIFIC STYLES
+////////////////////
+*/
+.ie8 header form input[type=text] {
+  width: 365px;
+}
+.ie8 header form .styled-select {
+  background: none;
+}
+/*
+////////////////////
+IE7 SPECIFIC STYLES
+////////////////////
+*/
+.ie7 header .utility-account ul li.account ul {
+  top: 15px;
+}
+.ie7 header .utility-account ul li.signin {
+  position: relative;
+  z-index: 3000;
+}
+.ie7 header .utility-account ul li.signin ul {
+  top: 30px;
+  right: -20px;
+  z-index: 1000;
+}
+.ie7 header .utility-account ul li.signin ul form {
+  width: 240px;
+  height: 160px;
+}
+.ie7 header .utility-account ul li.signin ul form input {
+  display: block;
+}
+.ie7 header .utility-account ul li.signin ul form input[type=text],
+.ie7 header .utility-account ul li.signin ul form input[type=password] {
+  width: 220px;
+}
+.ie7 header nav a {
+  padding: 10px;
+}
+.ie7 header nav > ul > li > ul {
+  left: 0px;
+  top: 35px;
+}
+.ie7 header nav > ul > ul#sub-more {
+  margin-right: -670px;
+}
+.ie7 header form {
+  height: 38px;
+  width: 505px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+.ie7 header form input[type=text] {
+  height: 17px;
+  width: 345px;
+}
+/* Morgan Branding Addition */
+header .row.table img#search {
+margin-left: -40px; 
+margin-top: -1px; 
+}

@@ -1,0 +1,192 @@
+.forceFontColor {
+    color: #002855 !important;
+}
+
+#footerBackground {
+	min-width: 100%;
+	background: #D6D2C4;
+}
+
+#footerContainer {
+	max-width: 1200px;
+	margin: 0 auto;
+	color: #333;
+}
+
+#footerRowOne {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#footerRowTwo {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footerRowTwo a {
+	display: block;
+	text-decoration: none;
+}
+
+#footerRowTwo > div {
+    padding: 10px;
+}
+
+.footerColHeader {
+	display: block;
+	font-weight: bold;
+	color: #022a56;
+}
+
+div#footerRowOne > div {
+	padding: 10px;
+}
+
+#footerNewsletterBlock > form > input[type="submit"] {
+    height: 35px;
+    width: 80px;
+    border: 0px;
+    background-color: #022a56;
+    color: #FFF;
+}
+
+#footerNewsletterBlock > form > input[type="text"] {
+    height: 25px;
+    width: 230px;
+    border: 0px;
+	padding: 5px;
+}
+
+
+div#footerContainer a {
+    color: #333;
+}
+
+#footerRowThree {
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#footerRowThree > hr, #footerContainer > hr {
+    border: 1px solid #022a56;
+    margin: 10px 0px;
+}
+
+
+
+@media screen and (min-width: 900px) {
+	
+	#footerRowTwo > div {
+		max-width: calc(100% / 5);
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+
+	#footerRowTwo > div {
+		max-width: calc(100% / 4);
+	}
+	
+	#footerCol5 {
+		max-width: 100% !important;
+	}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+
+	#footerRowTwo > div {
+		max-width: calc(100% / 3);
+	}
+	
+	#footerCol5 {
+		max-width: 66% !important;
+	}
+
+}
+
+@media screen and (max-width: 499px) {
+
+	#footerRowTwo > div {
+		width: 100%;
+		text-align: center;
+		    font-size: 1.4rem;
+	}
+	
+	div#footerRowOne > div {
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+		font-size: 1.4rem;
+	}
+	
+	div#footerRowThree {
+	    font-size: 1rem;
+	}
+	
+	div#footerNewsletterBlock > form > input[type=submit] {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: 30px;
+		border: 0px;
+		background-color: #002855;
+		color: #FFF;
+		font-size: 1.2rem;
+	}
+	
+	div#footerNewsletterBlock > form > input[type="text"] {
+		height: 25px;
+		width: 100%;
+		border: 0px;
+		margin-bottom: 5px;
+	}
+	
+
+	
+}
+
+#social_FB {
+        background-image: url('https://images.booksamillion.com/images/social/facebook_cpl.jpg');
+}
+
+#social_IG {
+        background-image: url('https://images.booksamillion.com/images/social/instagram_cpl.jpg');
+}
+
+#social_TW {
+        background-image: url('https://images.booksamillion.com/images/social/twitter_cpl.jpg');
+}
+
+#social_PN {
+        background-image: url('https://images.booksamillion.com/images/social/pinterest_cpl.jpg');
+}
+
+#social_BL {
+        background-image: url('https://images.booksamillion.com/images/social/blog_cpl.jpg');
+}
+
+.social_icon {
+        background-repeat: no-repeat;
+        background-position: top;
+}
+
+.social_icon:hover {
+    background-position: bottom !important;
+}
+
+#footerSocialBlock > a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#footerNewsletterBlock > form {
+    width: auto !important;
+}
+
+#footerNewsletterBlock > form > label {
+    display: none;
+}
